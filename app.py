@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 from src.routes.timer import timerRoutes
+from src.utilities.logging_config import setup_logging
 
-app = FastAPI()
+setup_logging()
+
+app = FastAPI(redirect_slashes=False)
 
 app.include_router(timerRoutes, prefix="/timer")
 

@@ -11,7 +11,9 @@ WORKDIR /app
 COPY requirements/local.txt local-requirements.txt
 RUN pip install --no-cache-dir -r local-requirements.txt && rm local-requirements.txt
 
-
 COPY . .
+
+RUN chmod -R 777 /app/logs/project.log
+USER root
 
 CMD ["celery", "-A", "src.celery_workers.celery_app", "worker", "--loglevel=info", "--queues=webhook_queue"]

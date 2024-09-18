@@ -12,6 +12,9 @@ RUN pip install --no-cache-dir -r local-requirements.txt && rm local-requirement
 
 COPY . .
 
+RUN chmod -R 777 /app/logs/project.log
+USER root
+
 EXPOSE 8000
 
 CMD ["python", "app.py"]

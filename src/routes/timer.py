@@ -5,11 +5,14 @@ from datetime import datetime, timedelta, timezone
 from pydantic import ValidationError
 from bson import ObjectId
 from bson.errors import InvalidId
-
+import logging
 import math
 from src.models.timer import SetTimerRequest, SetTimerResponse, GetTimerResponse
 from src.celery_workers import timer as timer_celery
 from src.database.timer import timer
+
+
+logger = logging.getLogger(__name__)
 
 timerRoutes = APIRouter()
 
@@ -23,6 +26,8 @@ async def set_timer(request: Request):
         raise HTTPException(status_code=HTTPStatus.BAD_REQUEST, detail="Request must be in JSON format")
 
     data = await request.json()
+    
+    print(data)
 
     try:
         timer_data = SetTimerRequest(**data)
@@ -36,7 +41,7 @@ async def set_timer(request: Request):
 
         timer_db = await timer.insert_timer_request(eta=eta, url=url)
 
-        timer_celery.fire_webhook.apply_async((str(timer_db.id), url), eta=eta, queue="webhook_queue")
+        timer_celery.fire_webhook.apply_async(args=[str(timer_db.id), url], eta=eta, queue="webhook_queue")
 
         response = SetTimerResponse(
             id=str(timer_db.id),
@@ -47,7 +52,7 @@ async def set_timer(request: Request):
         raise HTTPException(status_code=HTTPStatus.UNPROCESSABLE_ENTITY, detail=e.errors()) from e
     
     except Exception as e:
-        print(f"Unexpected error: {e}")
+        logger.warning("Unexpected error: %s", e)
         raise HTTPException(status_code=HTTPStatus.INTERNAL_SERVER_ERROR, detail="An unexpected error occurred.") from e
 
     return JSONResponse(content=response.model_dump(), status_code=HTTPStatus.CREATED)
@@ -64,14 +69,16 @@ async def get_timer(timer_id: str):
         ) from exc
 
     timer_db = await timer.get_timer_by_id(timer_id=timer_id)
-
+    
     if not timer_db:
+        logger.warning("Timer id %s not found in db", str(timer_id))
         raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail="Timer not found")
 
     time_now = datetime.now(tz=timezone.utc).replace(tzinfo=None)
     response = GetTimerResponse(id=timer_db.id, time_left=0)
 
-    if time_now > timer_db.eta:
+    if time_now > (timer_db.eta).replace(tzinfo=None):
+        logger.info("Trigger time is in past for timer id %s", str(timer_id))
         return JSONResponse(content=response.model_dump(), status_code=HTTPStatus.OK)
 
     response.time_left = math.floor((timer_db.eta - time_now).total_seconds())

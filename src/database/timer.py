@@ -7,16 +7,10 @@ from src.models.timer_db import TimerDB
 
 
 class Timer(BaseCrud[TimerDB]):
-    """Handle DB operations upon users collection."""
+    """Handle DB operations upon Timer collection."""
 
     _model_class = TimerDB
     _collection_name = "timer"
-
-    def serialize_data(self, obj):
-        # Convert the ObjectId to a string
-        if '_id' in obj and isinstance(obj['_id'], ObjectId):
-            obj['_id'] = str(obj['_id'])
-        return obj
 
     async def insert_timer_request(
         self,
@@ -31,6 +25,8 @@ class Timer(BaseCrud[TimerDB]):
         :param url: The URL that should be called when the timer expires
         :param user_id: Optional user ID associated with this timer request
         :return: The inserted TimerDB object
+        
+        user_id is a future scope when authorization is enabled.
         """
         timer_data = TimerDB(
             eta=eta,
@@ -40,7 +36,7 @@ class Timer(BaseCrud[TimerDB]):
             user_id=user_id,
         )
 
-        await self._collection.insert_one(timer_data.dict(by_alias=True))
+        await self._collection.insert_one(timer_data.model_dump(by_alias=True, exclude_none=True))
         return timer_data
 
     async def update_timer_request(
@@ -53,10 +49,12 @@ class Timer(BaseCrud[TimerDB]):
         Update a delivery job with the given update. This function both ensures the updated field is updated as well,
         and adds a delivery job status change object to the history when needed.
 
-        :param timer_id: the id of the delivery job that needs to be updated (used for filter
+        :param timer_id: the id of the timer document that needs to be updated (used for filter)
         :param updateObj: the update dict
-        :param user_id: the id of the user that triggered a change (courier-app) or None (deliverect)
+        :param user_id: the id of the user that triggered a change 
         :return: updated delivery job in case everything went fine, otherwise None
+        
+        user_id is a future scope when authorization is enabled.
         """
         update_obj["$set"] = {**update_obj.get("$set", {}), **{"updated": datetime.now(tz=timezone.utc)}}
         
@@ -73,18 +71,18 @@ class Timer(BaseCrud[TimerDB]):
         timer_id: ObjectId,
     ) -> Union[TimerDB, None]:
         """
-        Update a delivery job with the given update. This function both ensures the updated field is updated as well,
-        and adds a delivery job status change object to the history when needed.
-
-        :param timer_id: the id of the delivery job that needs to be updated (used for filter
+        Update a timer request in db with the given update. This function both ensures the updated field is updated as well.
+        
+        :param timer_id: the id of the timer that needs to be updated (used for filter
         :param updateObj: the update dict
-        :param user_id: the id of the user that triggered a change (courier-app) or None (deliverect)
-        :return: updated delivery job in case everything went fine, otherwise None
+        :param user_id: the id of the user that triggered a change 
+        :return: updated timer document in case everything went fine, otherwise None
+        
+        user_id is a future scope when authorization is enabled.
         """
         result = await self._collection.find_one({"_id": timer_id})
 
         if result:
-            # Convert the ObjectId to a string
             result['_id'] = str(result['_id'])
 
         return TimerDB(**result) if result else None

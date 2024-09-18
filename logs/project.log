@@ -1,0 +1,392 @@
+[2024-09-17 20:54:48,980] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 20:54:59,067] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 20:55:12,599] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-17 20:55:47,594] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 20:57:23,960] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 20:59:07,139] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 20:59:48,093] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:02:15,176] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:02:54,169] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:03:24,282] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:07:15,308] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:07:20,999] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:09:29,374] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:09:29,734] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-17 21:11:03,070] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:11:03,433] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:11:32,414] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:13:34,986] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:14:24,817] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:14:43,079] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:14:55,237] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:15:15,615] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:16:01,849] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:17:07,802] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-17 21:18:28,252] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:07:13,220] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:08:08,005] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:08:08,368] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-18 06:13:24,358] INFO in main (func: _log_changes): 4 changes detected
+[2024-09-18 06:17:06,886] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:17:11,216] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:18:17,998] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:20:16,070] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:21:35,221] INFO in main (func: _log_changes): 4 changes detected
+[2024-09-18 06:23:24,719] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:23:46,268] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:23:46,630] INFO in main (func: _log_changes): 5 changes detected
+[2024-09-18 06:25:19,665] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:25:44,682] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:25:45,039] INFO in main (func: _log_changes): 7 changes detected
+ to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:25:44,788] INFO in timer (func: fire_webhook): Webhook for test_timer_id triggered successfully.
+[2024-09-18 08:25:44,790] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:25:44,790] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 08:27:18,929] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:27:18,929] INFO in timer (func: fire_webhook): Webhook for test_timer_id triggered successfully.
+[2024-09-18 08:27:18,931] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:27:18,931] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 08:27:18,932] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:27:18,933] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status <MagicMock name='post().status_code' id='4392408112'>
+[2024-09-18 06:27:19,102] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-18 06:27:39,005] INFO in main (func: _log_changes): 2 changes detected
+ to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:27:38,829] INFO in timer (func: fire_webhook): Webhook for test_timer_id triggered successfully.
+[2024-09-18 08:27:38,831] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:27:38,831] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 08:27:38,832] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:27:38,832] WARNING in timer (func: fire_webhook): Error triggering webhook for test_timer_id: Network error
+[2024-09-18 06:28:22,590] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:28:22,947] INFO in main (func: _log_changes): 3 changes detected
+ to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:28:22,725] INFO in timer (func: fire_webhook): Webhook for test_timer_id triggered successfully.
+[2024-09-18 08:28:22,727] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:28:22,727] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 08:28:22,728] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:28:22,728] WARNING in timer (func: fire_webhook): Error triggering webhook for test_timer_id: Network error
+[2024-09-18 06:32:16,551] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-18 06:32:26,694] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:32:27,059] INFO in main (func: _log_changes): 4 changes detected
+ to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:32:26,833] INFO in timer (func: fire_webhook): Webhook for test_timer_id triggered successfully.
+[2024-09-18 08:32:26,834] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:32:26,834] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 08:32:26,835] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:32:26,836] WARNING in timer (func: fire_webhook): Error triggering webhook for test_timer_id: Network error
+[2024-09-18 06:32:59,906] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:33:00,265] INFO in main (func: _log_changes): 4 changes detected
+ to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:33:00,088] INFO in timer (func: fire_webhook): Webhook for test_timer_id triggered successfully.
+[2024-09-18 08:33:00,090] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:33:00,090] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 08:33:00,091] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:33:00,091] WARNING in timer (func: fire_webhook): Error triggering webhook for test_timer_id: Network error
+[2024-09-18 06:40:08,154] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:40:08,520] INFO in main (func: _log_changes): 3 changes detected
+ to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:40:08,430] INFO in timer (func: fire_webhook): Webhook for test_timer_id triggered successfully.
+[2024-09-18 08:40:08,432] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:40:08,432] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 08:40:08,433] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:40:08,433] WARNING in timer (func: fire_webhook): Error triggering webhook for test_timer_id: Network error
+[2024-09-18 06:50:27,869] INFO in main (func: _log_changes): 4 changes detected
+[2024-09-18 06:50:28,284] INFO in main (func: _log_changes): 5 changes detected
+ to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:50:28,147] INFO in timer (func: fire_webhook): Webhook for test_timer_id triggered successfully.
+[2024-09-18 08:50:28,148] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:50:28,148] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 08:50:28,149] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:50:28,149] WARNING in timer (func: fire_webhook): Error triggering webhook for test_timer_id: Network error
+[2024-09-18 06:52:25,081] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 06:52:25,494] INFO in main (func: _log_changes): 7 changes detected
+[2024-09-18 06:52:33,235] INFO in timer (func: get_timer): Trigger time is in past for timer id 66e9e20e8f48cd527fa8dc04
+[2024-09-18 06:52:43,252] INFO in timer (func: get_timer): Trigger time is in past for timer id 66ea78ae1c528981759a8f74
+g request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:52:25,371] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 08:52:25,373] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 08:52:25,373] WARNING in timer (func: fire_webhook): Error triggering webhook for test_timer_id: Network error
+[2024-09-18 07:14:13,833] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 07:14:14,248] INFO in main (func: _log_changes): 7 changes detected
+[2024-09-18 07:14:14,607] INFO in main (func: _log_changes): 7 changes detected
+uest: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 09:14:14,377] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:03:47,920] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:03:48,639] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:05:21,753] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:05:22,468] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:06:52,006] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:07:41,930] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:07:42,655] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:08:03,344] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:08:04,061] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:12:47,920] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 10:12:47,839] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:14:53,719] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:15:18,874] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://app.io/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 10:15:18,680] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:15:38,580] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:15:39,304] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:15:49,529] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:15:50,346] INFO in main (func: _log_changes): 2 changes detected
+(0, 0): (403) ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+[2024-09-18 10:15:50,277] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:16:07,780] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:16:36,365] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:16:37,133] INFO in main (func: _log_changes): 2 changes detected
+(0, 0): (403) ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+[2024-09-18 10:16:37,068] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:17:00,270] INFO in main (func: _log_changes): 2 changes detected
+(0, 0): (403) ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+[2024-09-18 10:17:00,176] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:17:21,434] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:17:22,156] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:17:32,112] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:19:33,799] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:19:34,515] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer "HTTP/1.1 307 Temporary Redirect"
+[2024-09-18 10:19:34,402] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:21:22,514] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer "HTTP/1.1 307 Temporary Redirect"
+[2024-09-18 10:21:22,326] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:21:31,790] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer "HTTP/1.1 307 Temporary Redirect"
+[2024-09-18 10:21:31,634] WARNING in timer (func: set_timer): Unexpected error: (0, 0): (403) ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+[2024-09-18 10:21:31,635] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 10:21:31,691] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:21:49,738] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer "HTTP/1.1 307 Temporary Redirect"
+[2024-09-18 10:21:49,611] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:22:09,387] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer "HTTP/1.1 307 Temporary Redirect"
+[2024-09-18 10:22:09,249] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:23:59,563] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:24:00,280] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer "HTTP/1.1 307 Temporary Redirect"
+[2024-09-18 10:24:00,165] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:24:26,677] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer "HTTP/1.1 307 Temporary Redirect"
+[2024-09-18 08:26:18,870] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 10:26:19,403] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer "HTTP/1.1 307 Temporary Redirect"
+[2024-09-18 08:26:19,637] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-18 08:26:25,140] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 10:26:25,491] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer "HTTP/1.1 307 Temporary Redirect"
+[2024-09-18 08:26:25,855] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-18 08:28:24,169] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:28:24,531] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer "HTTP/1.1 404 Not Found"
+[2024-09-18 08:30:54,190] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:30:54,546] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-18 10:30:54,727] INFO in _client (func: _send_single_request): HTTP Request: POST http://localhost:8000/timer "HTTP/1.1 404 Not Found"
+[2024-09-18 08:30:54,908] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-18 08:35:30,356] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:35:31,073] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer "HTTP/1.1 404 Not Found"
+[2024-09-18 08:38:17,114] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer "HTTP/1.1 404 Not Found"
+[2024-09-18 08:38:28,393] INFO in main (func: _log_changes): 2 changes detected
+(0, 0): (403) ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+[2024-09-18 10:38:28,272] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 08:40:57,217] INFO in main (func: _log_changes): 2 changes detected
+(0, 0): (403) ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+[2024-09-18 10:40:57,094] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 08:41:18,528] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:41:18,887] INFO in main (func: _log_changes): 3 changes detected
+(0, 0): (403) ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+[2024-09-18 10:41:18,757] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 08:41:48,073] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:41:48,430] INFO in main (func: _log_changes): 3 changes detected
+(0, 0): (403) ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+[2024-09-18 10:41:48,318] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 08:42:04,342] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:42:04,705] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:42:04,522] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer "HTTP/1.1 404 Not Found"
+[2024-09-18 08:42:28,848] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:42:28,667] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer "HTTP/1.1 404 Not Found"
+[2024-09-18 08:42:41,078] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 08:43:28,260] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:43:29,038] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:44:20,181] INFO in main (func: _log_changes): 2 changes detected
+NFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 08:44:38,691] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:44:38,565] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 08:47:08,255] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:47:08,620] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:47:08,448] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 08:49:40,036] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:49:39,906] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:49:39,906] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 08:50:06,585] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:50:06,304] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 08:52:25,261] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:52:26,034] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:52:25,466] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 08:52:47,706] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 08:52:48,536] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:52:48,254] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 08:53:28,534] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:53:28,363] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:53:28,363] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 08:53:59,594] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:53:59,441] WARNING in timer (func: set_timer): Unexpected error: src.models.timer.SetTimerRequest() argument after ** must be a mapping, not str
+[2024-09-18 10:53:59,441] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 08:54:13,389] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:54:13,247] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:54:13,248] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 08:56:00,695] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:56:00,556] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:56:00,556] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 10:56:00,560] INFO in _client (func: _send_single_request): HTTP Request: POST http://testserver/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:56:25,293] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:56:25,142] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:56:25,142] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 10:56:25,146] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/timers/ "HTTP/1.1 404 Not Found"
+[2024-09-18 08:57:15,344] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:57:15,189] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:57:15,190] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 10:57:15,195] WARNING in timer (func: set_timer): Unexpected error: Event loop is closed
+[2024-09-18 10:57:15,195] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 08:58:35,032] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:58:34,906] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:58:34,907] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 10:58:34,911] WARNING in timer (func: set_timer): Unexpected error: Event loop is closed
+[2024-09-18 10:58:34,911] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 08:58:54,667] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:58:54,525] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:58:54,526] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 10:58:54,529] WARNING in timer (func: set_timer): Unexpected error: Event loop is closed
+[2024-09-18 10:58:54,529] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 08:59:12,608] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:59:12,478] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:59:12,479] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 10:59:12,483] WARNING in timer (func: set_timer): Unexpected error: Event loop is closed
+[2024-09-18 10:59:12,483] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 08:59:34,471] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 10:59:34,326] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:59:34,327] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 10:59:34,330] WARNING in timer (func: set_timer): Unexpected error: Event loop is closed
+[2024-09-18 10:59:34,330] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 09:00:11,220] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:00:11,041] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:00:11,041] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 11:00:11,045] WARNING in timer (func: set_timer): Unexpected error: Event loop is closed
+[2024-09-18 11:00:11,045] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 09:00:23,551] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:00:23,391] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:00:23,391] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 11:00:23,395] WARNING in timer (func: set_timer): Unexpected error: Event loop is closed
+[2024-09-18 11:00:23,395] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 500 Internal Server Error"
+[2024-09-18 09:03:01,583] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:03:01,299] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:03:01,299] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 09:03:19,363] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:03:19,178] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:03:19,179] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 11:03:19,182] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/timer/66ea97577fa62d74fc64a854 "HTTP/1.1 404 Not Found"
+[2024-09-18 09:03:44,480] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:03:44,258] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:03:44,259] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 09:05:28,126] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:05:27,842] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:05:27,842] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 09:06:40,927] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 09:06:41,644] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:06:41,131] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:06:41,131] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 09:06:59,205] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 09:06:59,619] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:06:59,375] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:06:59,375] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 09:43:15,531] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:43:15,269] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:43:15,269] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 09:43:55,453] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 09:43:56,228] INFO in main (func: _log_changes): 3 changes detected
+[2024-09-18 09:44:11,521] INFO in main (func: _log_changes): 2 changes detected
+NFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:43:55,662] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 11:44:11,139] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:44:11,140] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:44:11,140] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 09:44:27,178] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:44:27,014] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:44:27,015] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 11:44:27,019] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/66eaa0fb156b0276c316b1e0 "HTTP/1.1 200 OK"
+[2024-09-18 09:44:38,849] INFO in main (func: _log_changes): 2 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:44:38,695] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:44:38,695] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 11:44:38,700] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/66eaa106bbb0fd0dd9941eaf "HTTP/1.1 200 OK"
+[2024-09-18 11:44:38,700] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/invalid_id "HTTP/1.1 400 Bad Request"
+[2024-09-18 09:44:47,487] INFO in main (func: _log_changes): 3 changes detected
+uest: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 11:44:47,260] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 11:44:47,260] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 11:44:47,264] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/66eaa10f6906395bdf870a03 "HTTP/1.1 200 OK"
+[2024-09-18 11:44:47,264] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/invalid_id "HTTP/1.1 400 Bad Request"
+[2024-09-18 10:22:41,577] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 10:22:41,938] INFO in main (func: _log_changes): 4 changes detected
+[2024-09-18 10:25:59,479] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 10:26:53,194] INFO in main (func: _log_changes): 2 changes detected
+r/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 12:22:41,804] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 12:22:41,808] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/66eaa9f119ca7db9fd7947bf "HTTP/1.1 200 OK"
+[2024-09-18 12:22:41,809] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/invalid_id "HTTP/1.1 400 Bad Request"
+[2024-09-18 12:22:41,809] WARNING in timer (func: get_timer): Timer id 66eaa9f119ca7db9fd7947c0 not found in db
+[2024-09-18 12:22:41,809] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/66eaa9f119ca7db9fd7947c0 "HTTP/1.1 404 Not Found"
+[2024-09-18 12:26:53,078] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 12:26:53,079] INFO in timer (func: fire_webhook): Webhook for test_timer_id triggered successfully.
+[2024-09-18 12:26:53,081] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 12:26:53,081] INFO in timer (func: fire_webhook): Webhook for test_timer_id failed with status 500
+[2024-09-18 12:26:53,082] INFO in timer (func: fire_webhook): Triggering request to http://example.com/webhook, for timer_id test_timer_id
+[2024-09-18 12:26:53,082] WARNING in timer (func: fire_webhook): Error triggering webhook for test_timer_id: Network error
+[2024-09-18 12:26:53,114] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 201 Created"
+[2024-09-18 12:26:53,115] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 400 Bad Request"
+[2024-09-18 12:26:53,115] INFO in _client (func: _send_single_request): HTTP Request: POST http://test/timer/ "HTTP/1.1 422 Unprocessable Entity"
+[2024-09-18 12:26:53,118] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/66eaaaed4b7db9b8e55bc7a7 "HTTP/1.1 200 OK"
+[2024-09-18 12:26:53,119] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/invalid_id "HTTP/1.1 400 Bad Request"
+[2024-09-18 12:26:53,119] WARNING in timer (func: get_timer): Timer id 66eaaaed4b7db9b8e55bc7a8 not found in db
+[2024-09-18 12:26:53,119] INFO in _client (func: _send_single_request): HTTP Request: GET http://test/timer/66eaaaed4b7db9b8e55bc7a8 "HTTP/1.1 404 Not Found"
+[2024-09-18 10:35:06,360] INFO in main (func: _log_changes): 18 changes detected
+[2024-09-18 10:39:44,697] INFO in main (func: _log_changes): 8 changes detected
+[2024-09-18 10:39:46,070] INFO in main (func: _log_changes): 6 changes detected
+[2024-09-18 10:39:56,849] INFO in main (func: _log_changes): 8 changes detected
+[2024-09-18 10:39:57,827] INFO in main (func: _log_changes): 2 changes detected
+[2024-09-18 10:40:19,655] INFO in main (func: _log_changes): 9 changes detected
+[2024-09-18 10:40:20,642] INFO in main (func: _log_changes): 2 changes detected

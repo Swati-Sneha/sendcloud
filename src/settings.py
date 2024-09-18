@@ -1,15 +1,6 @@
-import uuid
-import os
-from celery import Celery
-import requests
-from dotenv import load_dotenv
-from typing import List
 import enum
 import pydantic_settings
 from pydantic import Field
-
-from src.utilities.singleton import Singleton
-
 
 class SendCloudEnvironment(str, enum.Enum):
     LOCAL = "local"

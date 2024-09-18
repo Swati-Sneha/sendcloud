@@ -6,8 +6,10 @@ from celery import Celery
 from kombu import Queue
 
 from src.utilities.singleton import Singleton
+from src.utilities.logging_config import setup_logging
 from src.settings import settings
 
+setup_logging() 
 
 class CeleryApp(Singleton, Celery):
     """
@@ -42,6 +44,7 @@ class CeleryApp(Singleton, Celery):
 
 
 celery_app = CeleryApp.create_app()
+
 celery_app.conf.task_queues = (
     Queue('webhook_queue', routing_key='webhook.#'),
 )
@@ -49,3 +52,4 @@ celery_app.conf.task_queues = (
 celery_app.conf.task_routes = {
     'src.celery_workers.timer.fire_webhook': {'queue': 'webhook_queue'},
 }
+celery_app.autodiscover_tasks(['src.celery_workers.timer'])

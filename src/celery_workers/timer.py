@@ -1,6 +1,10 @@
-from src.celery_workers.celery_app import celery_app
 import requests
+import logging
+import asyncio
+from src.celery_workers.celery_app import celery_app
+from src.database.timer import timer
 
+logger = logging.getLogger(__name__)
 
 @celery_app.task
 def fire_webhook(timer_id, url) -> None:
@@ -24,14 +28,21 @@ def fire_webhook(timer_id, url) -> None:
 
     Example:
         >>> fire_webhook("12345", "https://example.com/webhook")
-        Webhook for 12345 triggered successfully.
     """
     try:
-        print("I am here")
+        logger.info("Triggering request to %s, for timer_id %s", url, timer_id)
+        update_dict = {}
         response = requests.post(url, data={"id": timer_id}, timeout=10.0)
         if response.status_code == 200:
-            print(f"Webhook for {timer_id} triggered successfully.")
+            logger.info("Webhook for %s triggered successfully.", timer_id)
+            update_dict = {"$set": {"status_code": 200, "success": True, "response": response.text}}
         else:
-            print(f"Webhook for {timer_id} failed with status {response.status_code}")
+            logger.info("Webhook for %s failed with status %s", timer_id, response.status_code)
+            update_dict = {"$set": {"status_code": response.status_code, "success": False, "response": response.text}}
     except requests.RequestException as e:
-        print(f"Error triggering webhook for {timer_id}: {e}")
+        logger.warning("Error triggering webhook for %s: %s", timer_id, e)
+        update_dict = {"$set": {"success": False, "response": str(e)}}
+    finally:
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(timer.update_timer_request(timer_id=timer_id, update_obj=update_dict))
+

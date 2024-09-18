@@ -13,3 +13,4 @@ class TimerDB(BaseDBModel):
     user_id: Optional[ObjectId] = None
     response: Optional[str] = None
     success: Optional[bool] = None
+    status_code: Optional[int] = None
